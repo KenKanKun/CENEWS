@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #89A8B2;
+    min-height: 100vh;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    background: #B3C8CF;
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgb(32, 32, 32);
+}
+
+nav .logo p {
+    margin: 15px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    color: white;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-family: Arial;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+nav a:hover{
+    color: aliceblue;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul {
+    margin-top: 10px;
+    width: 45%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F1F0E8;
+    border: 1px solid #000000;
+    margin-bottom: auto;
+    box-shadow: 0 2px 4px rgb(31, 31, 31);
+}
+
+.border {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 7px;
+    background-color: #F1F0E8;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgb(31, 31, 31);
+}
+
+.left {
+    display: flex;
+    margin-left: 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.id {
+    margin-top: 10px;
+    width: 550px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F1F0E8;
+    border: 1px solid #000000;
+    margin-bottom: auto;
+    box-shadow: 0 2px 4px rgb(31, 31, 31);
+}
+
+input[type = text], select {
+    width: 100%;
+    height: 30px;
+    padding: 12px, 20px;
+    margin: 8px 0px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], select {
+    width: 100%;
+    height: 30px;
+    padding: 12px, 20px;
+    margin: 8px 0px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgb(74, 255, 74);
+}
+
+textarea {
+    width: 100%;
+}
+
+.border-add {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 7px;
+    background-color: #F1F0E8;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgb(31, 31, 31);
+}
+
+input[type=submit]:hover {
+    background: rgb(170, 255, 159);
+}
+
+button[type=edit] {
+    background: rgb(140, 255, 140);
+}
+
+button[type=delete] {
+    background: rgb(255, 113, 113);
+}
+
+@media screen and (max-width:875px) {
+    h2 {
+        font-size:medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .small-text {
+        font-size: 8px;
+    }
+
+    button {
+        font-size: xx-small
+    }
+
+    nav{
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:614px) {
+    h2 {
+        font-size: x-small;
+    }
+
+    h3 {
+        font-size:small;
+    }
+
+    input[type = text], select {
+        font-size: x-small;
+    }
+
+    p {
+        font-size:x-small;
+    }
+
+    .small-text {
+        font-size: 6px;
+    }
+
+    button {
+        font-size: 6px;
+    }
+    
+    nav{
+        height: 50px;
+    }
+
+    nav li {
+        font-size: 13px;
+    }
+
+    nav .logo p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:420px) {
+    h2 {
+        font-size: xx-small;
+    }
+
+    h3 {
+        font-size: x-small
+    }
+
+    input[type = text], select {
+        font-size: xx-small;
+    }
+
+    p {
+        font-size:xx-small;
+    }
+
+    .small-text {
+        font-size: 4px;
+    }
+
+    button {
+        font-size: 4px;
+    }
+
+    nav{
+        height: 30px;
+        align-items: center;
+    }
+
+    nav li {
+        font-size: x-small;
+    }
+
+    nav .logo p {
+        font-size: small;
+    }
+
+}
